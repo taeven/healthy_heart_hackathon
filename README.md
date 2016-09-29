@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/taeven/healthy_heart_hackathon/edit/master)
+![alt tag](https://raw.githubusercontent.com/taeven/healthy_heart_hackathon/blob/master/app/src/main/res/drawable/newlogo.png)
 # healthy_heart_hackathon
 This is our teams app for a competition in Hackathon in India.
 It is being organised by IEEE at our college IIT Patna.
