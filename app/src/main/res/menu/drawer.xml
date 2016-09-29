@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+  <item android:title="Category">
+    <menu>
+      <item
+          android:id="@+id/first_aid"
+          android:icon="@drawable/firstaid"
+          android:title="First Aid" />
+      <item
+          android:id="@+id/bmi"
+          android:icon="@drawable/bmi"
+          android:title="BMI" />
+      <item
+          android:id="@+id/schedule"
+          android:icon="@drawable/schedule"
+          android:title="Schedule" />
+      <item
+          android:id="@+id/reminder"
+          android:icon="@drawable/reminder"
+          android:title="Medicine Reminder" />
+      <item
+          android:id="@+id/common_disease"
+          android:icon="@drawable/commondis"
+          android:title="Common Disease" />
+      <item
+          android:id="@+id/diet_chart"
+          android:icon="@drawable/diet"
+          android:title="Diet Chart" />
+      <item
+          android:id="@+id/medicine_price"
+          android:icon="@drawable/price"
+          android:title="Medicine Price" />
+    </menu>
+  </item>
+
+</menu>

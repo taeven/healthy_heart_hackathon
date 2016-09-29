@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".first_aid"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/basic_first_aid"
+        android:id="@+id/textView6"
+        android:layout_marginTop="30dp"
+        android:textIsSelectable="false"
+        android:singleLine="false"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/animal_bite"
+        android:text="@string/animal_bites_treatment"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp"
+        android:onClick="animal"
+        android:textIsSelectable="true"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/cuts_and_wounds"
+        android:id="@+id/cuts_wounds"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:onClick="cuts"
+        android:textIsSelectable="false"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/diarrhea_treatment"
+        android:id="@+id/diarrhea"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:onClick="diarrea"
+        android:textIsSelectable="false"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/insect_sting"
+        android:id="@+id/insect_sting"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:onClick="insect"
+        android:textIsSelectable="false"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/thermal_burn"
+        android:id="@+id/thermal_burn"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:onClick="burn"
+        android:textIsSelectable="false"
+        android:clickable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/treating_fever_in_chindren"
+        android:id="@+id/child_fever"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:onClick="fever"
+        android:textIsSelectable="false"
+        android:clickable="true" />
+</LinearLayout>
