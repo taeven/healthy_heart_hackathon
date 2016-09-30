@@ -346,6 +346,9 @@ public class MainActivity extends AppCompatActivity implements
 
     public void dialog_certain(int position)
     {
+        DialogFragment dh=new certain();
+        dh.show(getFragmentManager(),"dialog");
+
 
     }
 
