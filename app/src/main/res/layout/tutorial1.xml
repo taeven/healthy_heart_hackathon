@@ -18,17 +18,17 @@
         android:src="@drawable/newlogo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="185dp" />
+        android:layout_marginTop="185dp"
+        android:contentDescription="@string/app_name" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome to Healthy Heart"
+        android:text="@string/welcome_to_healthy_heart"
         android:id="@+id/textView2"
         android:textColor="#ffffff"
         android:layout_marginTop="61dp"
-        android:capitalize="sentences"
         android:textSize="30sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -36,7 +36,7 @@
         android:textAlignment="center" />
 
     <TextView
-        android:text="Healthy Heart provides scheduling and data related to users"
+        android:text="@string/healthy_heart_provides_scheduling_and_data_related_to_users"
         android:layout_height="wrap_content"
         android:textColor="#ffffff"
         android:textSize="20sp"

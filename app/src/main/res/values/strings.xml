@@ -18,4 +18,7 @@
     <string name="thermal_burn"><u>Thermal Burn</u></string>
     <string name="treating_fever_in_chindren"><u> Treating Fever In Children</u></string>
     <string name="vaccine_needs_according_to_age"><b>Vaccine needs according to age</b></string>
+    <string name="vaccine_chart">This image contains vaccine chart</string>
+    <string name="welcome_to_healthy_heart">Welcome to Healthy Heart</string>
+    <string name="healthy_heart_provides_scheduling_and_data_related_to_users">Healthy Heart provides scheduling and data related to users</string>
 </resources>
