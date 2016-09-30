@@ -35,18 +35,35 @@
           android:id="@+id/diet_chart"
           android:icon="@drawable/diet"
           android:title="Diet Chart" />
-      <item
-          android:id="@+id/medicine_price"
-          android:icon="@drawable/price"
-          android:title="Medicine Price" />
+
       <item
           android:id="@+id/vaccine"
           android:icon="@drawable/vaccine"
           android:title="Vaccine" />
 
-
-
     </menu>
   </item>
+    <item android:title="search medicine">
+        <menu>
+            <item
+                android:id="@+id/medicine_price"
+                android:icon="@drawable/price"
+                android:title="Medicine Price" />
+
+            <item
+                android:id="@+id/brand_generic"
+                android:icon="@drawable/sodium"
+                android:title="Brand to generic" />
+        </menu>
+    </item>
+
+    <item android:title="For Doctors">
+        <menu>
+            <item
+                android:id="@+id/article"
+                android:icon="@drawable/sodium"
+                android:title="Articles" />
+        </menu>
+    </item>
 
 </menu>
