@@ -53,7 +53,7 @@
             android:layout_alignBottom="@+id/textView8"
             android:layout_toRightOf="@+id/textView8"
             android:layout_marginLeft="20dp"
-            android:text="5"
+            android:text="@string/_5"
             android:paddingLeft="15dp" />
 
         <TextView
