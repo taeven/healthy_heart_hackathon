@@ -26,4 +26,16 @@
     <string name="healthy_heart_launcher"><b>HEALTHY HEART</b></string>
     <string name="for_every">For every</string>
     <string name="_5">5</string>
+    <string name="title_for_your_reminder">Enter title for your reminder</string>
+    <string name="title">Title</string>
+    <string name="done">done</string>
+    <string name="hours">hours</string>
+    <string name="morning">Morning</string>
+    <string name="_8_00">8:00</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="_13_00">13:00</string>
+    <string name="evening">Evening</string>
+    <string name="_20_00">20:00</string>
+    <string name="night">Night</string>
+    <string name="_21_00">21:00</string>
 </resources>

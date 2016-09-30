@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="title"
+        android:text="@string/title"
         android:id="@+id/textView7"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp" />
@@ -23,7 +23,7 @@
         android:id="@+id/title_for_reminder"
         android:layout_gravity="left"
         android:layout_marginLeft="10dp"
-        android:hint="Title for your reminder"
+        android:hint="@string/title_for_your_reminder"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp" />
 
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="hours"
+            android:text="@string/hours"
             android:id="@+id/textView9"
             android:layout_alignBottom="@+id/hours_of_reppeated"
             android:layout_toRightOf="@+id/hours_of_reppeated"
@@ -70,7 +70,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="done"
+            android:text="@string/done"
             android:id="@+id/button2"
             android:layout_gravity="center_horizontal"
             android:background="#167266"

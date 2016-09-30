@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="title"
+        android:text="@string/title"
         android:id="@+id/textView10"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp" />
@@ -23,7 +23,7 @@
         android:id="@+id/editText"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="5dp"
-        android:hint="Enter title for the reminder"
+        android:hint="@string/title_for_your_reminder"
         android:layout_marginRight="5dp" />
 
     <LinearLayout
@@ -34,7 +34,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="morning"
+        android:text="@string/morning"
         android:id="@+id/morning"
         android:checked="false"
         android:layout_marginTop="10dp"
@@ -48,7 +48,7 @@
             android:id="@+id/morning_time"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
-            android:text="8:00"
+            android:text="@string/_8_00"
             android:paddingLeft="13dp" />
 
     </LinearLayout>
@@ -60,7 +60,7 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="afternoon"
+            android:text="@string/afternoon"
             android:id="@+id/afternoon"
             android:checked="false"
             android:layout_marginTop="10dp"
@@ -74,7 +74,7 @@
             android:id="@+id/afternoon_tie"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
-            android:text="13:00"
+            android:text="@string/_13_00"
             android:paddingLeft="13dp" />
     </LinearLayout>
     <LinearLayout
@@ -84,7 +84,7 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="evening"
+            android:text="@string/evening"
             android:id="@+id/evening"
             android:checked="false"
             android:layout_marginTop="10dp"
@@ -98,7 +98,7 @@
             android:id="@+id/evening_time"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
-            android:text="20:00"
+            android:text="@string/_20_00"
             android:paddingLeft="13dp" />
     </LinearLayout>
     <LinearLayout
@@ -108,7 +108,7 @@
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="night"
+            android:text="@string/night"
             android:id="@+id/night"
             android:checked="false"
             android:layout_marginTop="10dp"
@@ -122,14 +122,14 @@
             android:id="@+id/night_time"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
-            android:text="21:00"
+            android:text="@string/_21_00"
             android:paddingLeft="13dp" />
     </LinearLayout>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="done"
+        android:text="@string/done"
         android:id="@+id/button3"
         android:layout_marginLeft="90dp"
         android:layout_marginBottom="10dp"
