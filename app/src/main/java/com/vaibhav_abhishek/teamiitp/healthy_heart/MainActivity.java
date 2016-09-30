@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements
                 .commit();
     }
     /**
-     * Handles clicks on the navigation menu.
+     * Handles clicks on the navigatio menu.
      */
     @Override
     public boolean onNavigationItemSelected(final MenuItem menuItem) {
