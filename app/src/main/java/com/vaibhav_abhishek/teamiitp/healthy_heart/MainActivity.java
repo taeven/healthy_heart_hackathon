@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements
                         .replace(R.id.content,bmi_cal)
                         .commit();
                 break;
-           case R.id.first_aid:
+            case R.id.first_aid:
                 getFragmentManager()
                         .beginTransaction()
                         .replace(R.id.content, FA)
@@ -119,8 +119,15 @@ public class MainActivity extends AppCompatActivity implements
                         .commit();
                 break;
 
-//            default:
-//                // ignore
+            case R.id.medicine_price:
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content,vc)
+                        .commit();
+                break;
+
+    //            default:
+    //                // ignore
 //                break;
         }
     }
