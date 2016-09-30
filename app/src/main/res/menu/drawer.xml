@@ -4,6 +4,12 @@
 
   <item android:title="Category">
     <menu>
+
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
       <item
           android:id="@+id/first_aid"
           android:icon="@drawable/firstaid"
@@ -16,10 +22,10 @@
           android:id="@+id/schedule"
           android:icon="@drawable/schedule"
           android:title="Schedule" />
-      <item
-          android:id="@+id/reminder"
-          android:icon="@drawable/reminder"
-          android:title="Medicine Reminder" />
+      <!--<item-->
+          <!--android:id="@+id/reminder"-->
+          <!--android:icon="@drawable/reminder"-->
+          <!--android:title="Medicine Reminder" />-->
       <item
           android:id="@+id/common_disease"
           android:icon="@drawable/commondis"
@@ -34,8 +40,11 @@
           android:title="Medicine Price" />
       <item
           android:id="@+id/vaccine"
-        android:icon="@drawable/vaccin"
-        android:title="Vaccine" />
+          android:icon="@drawable/vaccine"
+          android:title="Vaccine" />
+
+
+
     </menu>
   </item>
 

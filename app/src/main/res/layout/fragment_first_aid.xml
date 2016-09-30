@@ -29,7 +29,8 @@
         android:layout_marginTop="45dp"
         android:onClick="animal"
         android:textIsSelectable="true"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#555555" />
 
     <TextView
         android:layout_width="match_parent"
@@ -41,7 +42,8 @@
         android:layout_marginTop="15dp"
         android:onClick="cuts"
         android:textIsSelectable="false"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#555555" />
 
     <TextView
         android:layout_width="match_parent"
@@ -53,7 +55,8 @@
         android:layout_marginTop="15dp"
         android:onClick="diarrea"
         android:textIsSelectable="false"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#555555" />
 
     <TextView
         android:layout_width="match_parent"
@@ -65,7 +68,8 @@
         android:layout_marginTop="15dp"
         android:onClick="insect"
         android:textIsSelectable="false"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#555555" />
 
     <TextView
         android:layout_width="match_parent"
@@ -77,7 +81,8 @@
         android:layout_marginTop="15dp"
         android:onClick="burn"
         android:textIsSelectable="false"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#555555" />
 
     <TextView
         android:layout_width="match_parent"
@@ -89,5 +94,6 @@
         android:layout_marginTop="15dp"
         android:onClick="fever"
         android:textIsSelectable="false"
-        android:clickable="true" />
+        android:clickable="true"
+        android:textColor="#555555" />
 </LinearLayout>
