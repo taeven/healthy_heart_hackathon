@@ -1,7 +1,9 @@
 package com.vaibhav_abhishek.teamiitp.healthy_heart;
 
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
@@ -170,6 +172,14 @@ public class MainActivity extends AppCompatActivity implements
         NotificationManager mNotificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(3, mBuilder.build());
+
+
+        
+        Intent notificationIntent=new Intent(this,MainActivity.class);
+        PendingIntent intent = PendingIntent.getActivity(this, 0,
+                notificationIntent, 0);
+
+        mBuilder.setContentIntent(intent);
     }
 
     public void cuts(View v)
