@@ -2,27 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-  <item android:title="Category">
+  <item android:title="@string/category">
     <menu>
 
 
       <item
         android:id="@+id/home_icon"
         android:icon="@drawable/home"
-        android:title="Home" />
+        android:title="@string/home" />
 
       <item
           android:id="@+id/first_aid"
           android:icon="@drawable/firstaid"
-          android:title="First Aid" />
+          android:title="@string/first_aid" />
       <item
           android:id="@+id/bmi"
           android:icon="@drawable/bmi"
-          android:title="BMI" />
+          android:title="@string/bmi" />
       <item
           android:id="@+id/schedule"
           android:icon="@drawable/schedule"
-          android:title="Schedule" />
+          android:title="@string/schedule" />
       <!--<item-->
           <!--android:id="@+id/reminder"-->
           <!--android:icon="@drawable/reminder"-->
@@ -30,30 +30,30 @@
       <item
           android:id="@+id/common_disease"
           android:icon="@drawable/commondis"
-          android:title="Common Disease" />
+          android:title="@string/common_disease" />
       <item
           android:id="@+id/diet_chart"
           android:icon="@drawable/diet"
-          android:title="Diet Chart" />
+          android:title="@string/diet_chart" />
 
       <item
           android:id="@+id/vaccine"
           android:icon="@drawable/vaccine"
-          android:title="Vaccine" />
+          android:title="@string/vaccine" />
 
     </menu>
   </item>
-    <item android:title="search medicine">
+    <item android:title="@string/search_medicine">
         <menu>
             <item
                 android:id="@+id/medicine_price"
                 android:icon="@drawable/price"
-                android:title="Medicine Price" />
+                android:title="@string/medicine_price" />
 
             <item
                 android:id="@+id/brand_generic"
                 android:icon="@drawable/sodium"
-                android:title="Brand to generic" />
+                android:title="@string/brand_to_generic" />
         </menu>
     </item>
 
@@ -62,7 +62,7 @@
             <item
                 android:id="@+id/article"
                 android:icon="@drawable/sodium"
-                android:title="Articles" />
+                android:title="@string/articles" />
         </menu>
     </item>
 

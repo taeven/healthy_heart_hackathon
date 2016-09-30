@@ -4,9 +4,9 @@
 
     <item
         android:id="@+id/daily"
-        android:title="Daily" />
+        android:title="@string/daily" />
     <item
         android:id="@+id/next"
-        android:title="next x days" />
+        android:title="Next x days" />
 
 </menu>

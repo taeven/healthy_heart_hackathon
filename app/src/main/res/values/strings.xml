@@ -38,4 +38,18 @@
     <string name="_20_00">20:00</string>
     <string name="night">Night</string>
     <string name="_21_00">21:00</string>
+    <string name="articles">Articles</string>
+    <string name="for_doctors">For Doctors</string>
+    <string name="brand_to_generic">Brand to generic</string>
+    <string name="medicine_price">Medicine Price</string>
+    <string name="search_medicine">Search Medicine</string>
+    <string name="vaccine">Vaccine</string>
+    <string name="diet_chart">Diet Chart</string>
+    <string name="common_disease">Common Disease</string>
+    <string name="schedule">Schedule</string>
+    <string name="bmi">BMI</string>
+    <string name="first_aid">First Aid</string>
+    <string name="home">Home</string>
+    <string name="category">Category</string>
+    <string name="daily">Daily</string>
 </resources>
