@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements
     private webview web_rt;
     private  String type="animal";
     private final first_aid FA=new first_aid();
+    private final home hm=new home();
     private final Handler mDrawerActionHandler = new Handler();
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements
 
         // load saved navigation state if present
         if (null == savedInstanceState) {
-            mNavItemId = R.id.first_aid;
+            mNavItemId = R.id.home;
         } else {
             mNavItemId = savedInstanceState.getInt(NAV_ITEM_ID);
         }
@@ -90,6 +91,14 @@ public class MainActivity extends AppCompatActivity implements
 
                 notify_me();
                 break;
+
+            case R.id.home:
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content,hm)
+                        .commit();
+                break;
+
 //            default:
 //                // ignore
 //                break;
