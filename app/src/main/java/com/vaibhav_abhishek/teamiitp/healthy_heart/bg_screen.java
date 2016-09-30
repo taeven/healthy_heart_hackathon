@@ -12,14 +12,14 @@ public class bg_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bg_screen);
-//        new Handler().postDelayed(new Runnable() {
-//
-//            @Override
-//            public void run() {
+        new Handler().postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
                 Intent i= new Intent("com.vaibhav_abhishek.teamiitp.healthy_heart.MainActivity");
                 startActivity(i);
-//            }
-//        }, 2000);
+            }
+        }, 1500);
 
     }
 
