@@ -14,4 +14,4 @@ We are also providing medicine prices and brand to generic medicine converter fr
 
 Helping doctors by applying math for their use and showing how data can help doctor a pateint's medical needs.
 
-[More info in this PPT](https://docs.google.com/presentation/d/1CJXjtMejV1XHB-herys7hP1Z0AJllEBXUnbiIf0LGb4/edit#slide=id.gd9c453428_0_16)
+[More info in this PPT](https://docs.google.com/presentation/d/1CJXjtMejV1XHB-herys7hP1Z0AJllEBXUnbiIf0LGb4/edit?usp=sharing)
