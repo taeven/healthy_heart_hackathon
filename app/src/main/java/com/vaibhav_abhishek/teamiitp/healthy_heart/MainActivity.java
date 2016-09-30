@@ -3,6 +3,7 @@ package com.vaibhav_abhishek.teamiitp.healthy_heart;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -11,11 +12,14 @@ import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
+
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener {
@@ -31,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements
     private  String type="animal";
     private final first_aid FA=new first_aid();
     private final home hm=new home();
+    private final schedule sch=new schedule();
     private final Handler mDrawerActionHandler = new Handler();
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -49,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements
 
         // load saved navigation state if present
         if (null == savedInstanceState) {
-            mNavItemId = R.id.home;
+            mNavItemId = R.id.home_icon;
         } else {
             mNavItemId = savedInstanceState.getInt(NAV_ITEM_ID);
         }
@@ -92,13 +97,18 @@ public class MainActivity extends AppCompatActivity implements
                 notify_me();
                 break;
 
-            case R.id.home:
+            case R.id.home_icon:
                 getFragmentManager()
                         .beginTransaction()
                         .replace(R.id.content,hm)
                         .commit();
                 break;
-
+            case R.id.schedule:
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content,sch)
+                        .commit();
+                break;
 //            default:
 //                // ignore
 //                break;
@@ -253,6 +263,38 @@ public class MainActivity extends AppCompatActivity implements
         outState.putInt(NAV_ITEM_ID, mNavItemId);
     }
 
+    public void fab_listner(View view)
+    {
+//        hourly_certain hc=new hourly_certain();
+//        AlertDialog ad=hc.onCreateDialog();
+//        ad.show();
+
+        final String choices[]={"Daily","For next X days"};
+
+
+
+
+        AlertDialog.Builder ab = new AlertDialog.Builder(MainActivity.this);
+
+
+        ab.setTitle("Select A Reminder Type ");
+
+        ab.setItems(choices, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                String selectedText = Arrays.asList(choices).get(which);
+
+               //to do with strings
+
+
+            }
+        });
+
+        AlertDialog dialog = ab.create();
+
+        dialog.show();
+
+    }
 
 
 
