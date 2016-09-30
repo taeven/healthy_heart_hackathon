@@ -14,20 +14,22 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="title"
         android:id="@+id/textView7"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp" />
 
     <EditText
         android:layout_width="246dp"
         android:layout_height="wrap_content"
         android:id="@+id/title_for_reminder"
         android:layout_gravity="left"
-        android:layout_marginLeft="40dp"
-        android:hint="Title for your reminder" />
+        android:layout_marginLeft="10dp"
+        android:hint="Title for your reminder"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="140dp"
        >
 
 
@@ -38,8 +40,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="for every"
         android:id="@+id/textView8"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp" />
 
         <EditText
             android:layout_width="50dp"
@@ -77,7 +79,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="25dp"
-            android:layout_marginLeft="83dp" />
+            android:layout_marginLeft="72dp" />
 
 
     </RelativeLayout>
