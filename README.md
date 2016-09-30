@@ -4,7 +4,6 @@ This is our teams app for a competition in Hackathon in India.
 
 It is being organised by IEEE at our college IIT Patna.
 
-
 We are trying to make app for both patient and doctor.
 
 Helping patient by providing them with first aid, BMI(Body Mass Index) calculator, medicine schedule, vaccine and diet chart.
