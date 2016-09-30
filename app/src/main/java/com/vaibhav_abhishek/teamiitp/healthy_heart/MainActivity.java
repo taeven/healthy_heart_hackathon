@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements
 
     private static final long DRAWER_CLOSE_DELAY_MS = 350;
     private static final String NAV_ITEM_ID = "navItemId";
+    private final vaccine vc=new vaccine();
 
     private final bmi_calculator bmi_cal = new bmi_calculator();
     private final SecondFragment mSecondFragment = new SecondFragment();
@@ -111,6 +112,13 @@ public class MainActivity extends AppCompatActivity implements
                         .replace(R.id.content,sch)
                         .commit();
                 break;
+            case R.id.vaccine:
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content,vc)
+                        .commit();
+                break;
+
 //            default:
 //                // ignore
 //                break;
