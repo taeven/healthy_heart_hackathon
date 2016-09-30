@@ -1,5 +1,7 @@
 package com.vaibhav_abhishek.teamiitp.healthy_heart;
 
+import android.app.Dialog;
+import android.app.DialogFragment;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -282,8 +284,8 @@ public class MainActivity extends AppCompatActivity implements
         ab.setItems(choices, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                String selectedText = Arrays.asList(choices).get(which);
-
+//                String selectedText = Arrays.asList(choices).get(which);
+               dialog_hourly_certain(which);
                //to do with strings
 
 
@@ -295,6 +297,59 @@ public class MainActivity extends AppCompatActivity implements
         dialog.show();
 
     }
+
+    public void dialog_hourly_certain(final int position)
+    {
+
+        final String choices[]={"On hourly basis","For a certain time"};
+
+
+
+
+        AlertDialog.Builder ab = new AlertDialog.Builder(MainActivity.this);
+
+
+        ab.setTitle("day time setup");
+
+        ab.setItems(choices, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+//                String selectedText = Arrays.asList(choices).get(which);
+
+                if(which==0) {
+                    dialog_hourly(position);
+                }
+                else
+                    if(which==1)
+                    {
+                        dialog_certain(position);
+                    }
+                //to do with strings
+
+
+            }
+        });
+
+        AlertDialog dialog = ab.create();
+
+        dialog.show();
+
+
+    }
+
+    public void dialog_hourly(final int position)
+    {
+        DialogFragment dh=new hourly();
+//        getFragmentManager().beginTransaction().replace(R.id.content,dh).commit();
+        dh.show(getFragmentManager(),"dialog");
+    }
+
+    public void dialog_certain(int position)
+    {
+
+    }
+
+
 
 
 
