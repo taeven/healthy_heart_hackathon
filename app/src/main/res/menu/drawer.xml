@@ -61,7 +61,7 @@
         <menu>
             <item
                 android:id="@+id/article"
-                android:icon="@drawable/sodium"
+                android:icon="@drawable/article"
                 android:title="@string/articles" />
         </menu>
     </item>

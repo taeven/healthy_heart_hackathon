@@ -324,7 +324,7 @@ public class MainActivity extends AppCompatActivity implements
         AlertDialog.Builder ab = new AlertDialog.Builder(MainActivity.this);
 
 
-        ab.setTitle("day time setup");
+        ab.setTitle("Day time setup");
 
         ab.setItems(choices, new DialogInterface.OnClickListener() {
             @Override
