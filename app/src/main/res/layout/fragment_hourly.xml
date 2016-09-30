@@ -14,8 +14,8 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="title"
         android:id="@+id/textView7"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="40dp" />
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp" />
 
     <EditText
         android:layout_width="246dp"
@@ -27,7 +27,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="150dp"
        >
 
 
@@ -64,6 +64,20 @@
             android:layout_toRightOf="@+id/hours_of_reppeated"
             android:layout_toEndOf="@+id/hours_of_reppeated"
             android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="set reminder"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:background="#167266"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="83dp" />
 
 
     </RelativeLayout>
