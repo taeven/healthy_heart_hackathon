@@ -38,7 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="for every"
+        android:text="@string/for_every"
         android:id="@+id/textView8"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp" />
@@ -53,7 +53,7 @@
             android:layout_alignBottom="@+id/textView8"
             android:layout_toRightOf="@+id/textView8"
             android:layout_marginLeft="20dp"
-            android:text="5"
+            android:text="@string/_5"
             android:paddingLeft="15dp" />
 
         <TextView

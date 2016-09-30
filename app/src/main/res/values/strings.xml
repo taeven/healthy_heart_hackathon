@@ -21,4 +21,9 @@
     <string name="vaccine_chart">This image contains vaccine chart</string>
     <string name="welcome_to_healthy_heart">Welcome to Healthy Heart</string>
     <string name="healthy_heart_provides_scheduling_and_data_related_to_users">Healthy Heart provides scheduling and data related to users</string>
+    <string name="healthy_heart">Healthy Heart</string>
+    <string name="new_logo">new_logo</string>
+    <string name="healthy_heart_launcher"><b>HEALTHY HEART</b></string>
+    <string name="for_every">For every</string>
+    <string name="_5">5</string>
 </resources>
