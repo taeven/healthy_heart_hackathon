@@ -32,6 +32,10 @@
           android:id="@+id/medicine_price"
           android:icon="@drawable/price"
           android:title="Medicine Price" />
+      <item
+          android:id="@+id/vaccine"
+        android:icon="@drawable/vaccin"
+        android:title="Vaccine" />
     </menu>
   </item>
 
