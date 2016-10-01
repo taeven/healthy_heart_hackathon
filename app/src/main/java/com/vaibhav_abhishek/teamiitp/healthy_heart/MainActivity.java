@@ -105,12 +105,13 @@ public class MainActivity extends AppCompatActivity implements
             case R.id.bmi:
                 getFragmentManager()
                         .beginTransaction()
+                        .addToBackStack("bmi")
                         .replace(R.id.content,bmi_cal)
                         .commit();
                 break;
             case R.id.first_aid:
                 getFragmentManager()
-                        .beginTransaction()
+                        .beginTransaction().addToBackStack("first_aid")
                         .replace(R.id.content, FA)
                         .commit();
                 break;
@@ -121,40 +122,40 @@ public class MainActivity extends AppCompatActivity implements
 
             case R.id.home_icon:
                 getFragmentManager()
-                        .beginTransaction()
+                        .beginTransaction().addToBackStack("home")
                         .replace(R.id.content,hm)
                         .commit();
                 break;
             case R.id.schedule:
                 getFragmentManager()
-                        .beginTransaction()
+                        .beginTransaction().addToBackStack("schedule")
                         .replace(R.id.content,sch)
                         .commit();
                 break;
             case R.id.vaccine:
                 getFragmentManager()
-                        .beginTransaction()
+                        .beginTransaction().addToBackStack("vaccine")
                         .replace(R.id.content,vc)
                         .commit();
                 break;
 
             case R.id.medicine_price:
                 getFragmentManager()
-                        .beginTransaction()
+                        .beginTransaction().addToBackStack("med_price")
                         .replace(R.id.content,mp)
                         .commit();
                 break;
 
             case R.id.brand_generic:
                 getFragmentManager()
-                        .beginTransaction()
+                        .beginTransaction().addToBackStack("brand")
                         .replace(R.id.content,bg)
                         .commit();
                 break;
 
             case R.id.symptom_checker:
                 getFragmentManager()
-                        .beginTransaction()
+                        .beginTransaction().addToBackStack("symptom")
                         .replace(R.id.content,sc)
                         .commit();
                 break;
@@ -173,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements
         web_rt.setArguments(bundle);
 
         getFragmentManager()
-                .beginTransaction()
+                .beginTransaction().addToBackStack("animal")
                 .replace(R.id.content,web_rt)
                 .commit();
     }
@@ -186,7 +187,7 @@ public class MainActivity extends AppCompatActivity implements
         web_rt.setArguments(bundle);
 
         getFragmentManager()
-                .beginTransaction()
+                .beginTransaction().addToBackStack("burn")
                 .replace(R.id.content,web_rt)
                 .commit();
     }
