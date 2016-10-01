@@ -50,9 +50,9 @@
                 android:icon="@drawable/price"
                 android:title="@string/medicine_price" />
             <item
-                android:id="@+id/medicine_info"
+                android:id="@+id/symptom_checker"
                 android:icon="@drawable/price"
-                android:title="@string/medicine_information" />
+                android:title="@string/symptom_checker" />
 
             <item
                 android:id="@+id/brand_generic"

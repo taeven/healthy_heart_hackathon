@@ -18,6 +18,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.NotificationCompat;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements
     private final SecondFragment mSecondFragment = new SecondFragment();
     private webview web_rt;
     private  String type="animal";
+    private final symptom_checker sc=new symptom_checker();
     private medicine_price mp=new medicine_price();
     private final first_aid FA=new first_aid();
     private final home hm=new home();
@@ -45,6 +47,13 @@ public class MainActivity extends AppCompatActivity implements
     private ActionBarDrawerToggle mDrawerToggle;
     private int mNavItemId;
     private Bundle bundle;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.trple_dot,menu);
+
+        return true;
+    }
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -131,6 +140,13 @@ public class MainActivity extends AppCompatActivity implements
                 getFragmentManager()
                         .beginTransaction()
                         .replace(R.id.content,bg)
+                        .commit();
+                break;
+
+            case R.id.symptom_checker:
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content,sc)
                         .commit();
                 break;
 

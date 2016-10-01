@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
+
+
     <!-- The main content view -->
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,6 +21,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorPrimary"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
 
 
         <!-- Real content goes here -->
@@ -41,4 +44,7 @@
         app:itemTextColor="@color/drawer_item_text_default"
         app:menu="@menu/drawer"/>
 
+
 </android.support.v4.widget.DrawerLayout>
+
+
