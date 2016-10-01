@@ -41,7 +41,7 @@
     <string name="articles">Articles</string>
     <string name="for_doctors">For Doctors</string>
     <string name="brand_to_generic">Brand to generic</string>
-    <string name="medicine_price">Medicine Price And Information</string>
+    <string name="medicine_price">Medicine Price And Info</string>
     <string name="search_medicine">Search Medicine</string>
     <string name="vaccine">Vaccine</string>
     <string name="diet_chart">Diet Chart</string>
@@ -54,4 +54,6 @@
     <string name="daily">Daily</string>
     <string name="medicine_information">medicine information</string>
     <string name="symptom_checker">Symptom Checker</string>
+    <string name="user">User</string>
+    <string name="prevention">Prevention</string>
 </resources>

@@ -1,6 +1,6 @@
 <html>
-	<head>
-		<style>
+<head>
+	<style>
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 		    body {font-family:lucida sans unicode,lucida grande,sans-serif; font-size: 15px;}
 		    a {text-decoration: none; color: #0099cc;}
@@ -9,29 +9,79 @@
 		    .center {text-align: center;}
 		    .padded {padding-top: 20px;}
 		    .doublePadded {padding-top: 0px;}
+			.header{
+			color:red;
+			background-color:grey;
+			text-align:center;
+			font-family:courier;
+			}
+			div.img {
+				margin: 5px;
+				border: 1px solid #ccc;
+				float: left;
+				width: 160px;
+			}
+
+			div.img:hover {
+				border: 1px solid #777;
+			}
+
+			div.img img {
+				width: 100%;
+				height: auto;
+			}
+
+			div.desc {
+				padding: 15px;
+				text-align: center;
+			}
+			div.footer {
+				clear : both;
+			}
 		</style>
-	</head>
-	<body>
-		<div class="padded center">
-			<p>
-				Healthy Heart is a project our team made at Hackathon organised by IEEE(<a href="https://github.com/taeven/healthy_heart_hackathon">Github</a>)
-			</p>
-		</div>
-			<div class="padded">
-				<strong>Credits</strong></p>
-				<ul>
-					<li>Internet</li>
-				</ul>
-			</div>
-		<div class="padded">
-			<p><strong>Team</strong></p>
-			<ul>
-				<li> Vaibhav Sisodiya - <a href="https://github.com/taeven">Github</a> - Email :- vaibhavsisodiya2@gmail.com</li>
-				<li> Abhishek Agrawal - <a href="https://github.com/Abhishek-dev2">Github</a> - Email :- aagrawal207@gmail.com</li>
-			</ul>
-			<a href="https://docs.google.com/presentation/d/1CJXjtMejV1XHB-herys7hP1Z0AJllEBXUnbiIf0LGb4/edit?usp=sharing">Watch this PPT for more info about our app</a>
-			<p>We would love to hear your response.</p>
-		</div>
-		</div>
-	</body>
+</head>
+<body>
+<div class="content">
+	<p style="text-align:center">Healthy heart is a project made by our team In Hackathron Organised by IEEE(<a href="https://github.com/taeven/healthy_heart_hackathon" target="_blank">Github</a>)</p>
+</div>
+<div class="padded">
+	<p><strong>Credits</strong></p>
+	<ul>
+		<li>Internet</li>
+	</ul>
+</div>
+<div class="padded">
+	<strong>Team</strong></p>
+</div>
+<div class="img">
+	<img src="vaibhav.jpg" alt="Vaibhav" width="300" height="200">
+	<div class="desc">
+		<p style="text-align:center">Vaibhav Sisodiya</p><br>
+		<a href="https://github.com/taeven" target="_blank">Github</a>
+	</div>
+</div>
+
+<div class="img">
+	<img src="abhishek.jpg" alt="Abhishek" width="300" height="200">
+	<div class="desc">
+		<p style="text-align:center">Abhishek Agrawal</p><br>
+		<a href="https://github.com/Abhishek-dev2" target="_blank">Github</a>
+		<br>
+	</div>
+</div>
+<div class="footer">
+	<br>
+	<div>
+		<a href="https://docs.google.com/presentation/d/1CJXjtMejV1XHB-herys7hP1Z0AJllEBXUnbiIf0LGb4/edit?usp=sharing" target="_blank" 				style="margin-top: 16px;clear:both;">Watch this PPT for more info about our app</a>
+	</div>
+	<div class="padded">
+		<strong>Feedback</strong></p>
+		<p>Please give us feedback at our email ids : </p>
+		<ul>
+			<li> Vaibhav Sisodiya :- vaibhavsisodiya2@gmail.com</li>
+			<li> Abhishek Agrawal :- aagrawal207@gmail.com</li>
+		</ul>
+	</div>
+</div>
+</body>
 </html>
