@@ -10,26 +10,20 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 
 
-public class medicine_price extends Fragment {
-
-
-    public medicine_price() {
-        // Required empty public constructor
-        url="http://dawa.in/pages/all/medinfo.jsf";
-    }
-
+public class brand_to_generic extends Fragment {
+  WebView wv;
     private String url;
 
-    private WebView wv;
-
-
+    public brand_to_generic() {
+        // Required empty public constructor
+        url="http://www.emedexpert.com/lists/brand-generic.shtml";
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_medicine_price, container, false);
-
-        wv=(WebView)view.findViewById(R.id.medicine_price);
+        View view= inflater.inflate(R.layout.fragment_brand_to_generic, container, false);
+        wv=(WebView)view.findViewById(R.id.brand_to_generic);
         wv.setWebViewClient(new mybrowser());
         wv.getSettings().setLoadsImagesAutomatically(true);
         wv.getSettings().setJavaScriptEnabled(true);
@@ -39,6 +33,5 @@ public class medicine_price extends Fragment {
 
         return view;
     }
-
 
 }
