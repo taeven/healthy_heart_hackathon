@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity implements
                         .replace(R.id.content, dc)
                         .commit();
 
-                notify_me();
+//                notify_me();
                 break;
 
             case R.id.home_icon:
