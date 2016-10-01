@@ -14,5 +14,8 @@ public class After_bg_show extends AppCompatActivity {
 //        viewPager.setAdapter(new Pager_adapter(getSupportFragmentManager()));
         Intent i=new Intent("com.incals.vaibhav.babaplant.login_page");
         startActivity(i);
+
     }
+
+
 }

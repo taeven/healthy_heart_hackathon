@@ -12,6 +12,7 @@ public class bg_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bg_screen);
+
         new Handler().postDelayed(new Runnable() {
 
             @Override
@@ -20,6 +21,8 @@ public class bg_screen extends AppCompatActivity {
                 startActivity(i);
             }
         }, 1500);
+
+
 
     }
 

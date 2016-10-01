@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements
     private webview web_rt;
     private EditText hrs;
     private  String type="animal";
+    private final common_disease cd=new common_disease();
     private final symptom_checker sc=new symptom_checker();
     private medicine_price mp=new medicine_price();
     private about abt=new about();
@@ -157,6 +158,12 @@ public class MainActivity extends AppCompatActivity implements
                 getFragmentManager()
                         .beginTransaction().addToBackStack("symptom")
                         .replace(R.id.content,sc)
+                        .commit();
+                break;
+            case R.id.common_disease:
+                getFragmentManager()
+                        .beginTransaction().addToBackStack("symptom")
+                        .replace(R.id.content,cd)
                         .commit();
                 break;
 
@@ -307,10 +314,16 @@ public class MainActivity extends AppCompatActivity implements
     }
 
     @Override
+    protected void onStop() {
+        super.onStop();
+    }
+
+    @Override
     public void onBackPressed() {
         if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
         } else {
+
             super.onBackPressed();
         }
     }

@@ -10,29 +10,32 @@ import android.view.ViewGroup;
 import android.webkit.WebView;
 
 
-public class brand_to_generic extends Fragment {
-  WebView wv;
+public class common_disease extends Fragment {
+
+    public common_disease() {
+        // Required empty public constructor
+        url="http://www.cdc.gov/diseasesconditions/";
+    }
+
     private String url;
 
-    public brand_to_generic() {
-        // Required empty public constructor
-        url="http://www.emedexpert.com/lists/brand-generic.shtml";
-    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_brand_to_generic, container, false);
-        wv=(WebView)view.findViewById(R.id.brand_to_generic);
+        View view =inflater.inflate(R.layout.fragment_common_disease, container, false);
+
+        WebView wv = (WebView) view.findViewById(R.id.common_disease_web);
         wv.setWebViewClient(new mybrowser());
         wv.getSettings().setLoadsImagesAutomatically(true);
         wv.getSettings().setJavaScriptEnabled(true);
-        wv.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         wv.getSettings().setBuiltInZoomControls(true);
+        wv.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         wv.loadUrl(url);
 
-
-        return view;
+        return  view;
     }
+
 
 }

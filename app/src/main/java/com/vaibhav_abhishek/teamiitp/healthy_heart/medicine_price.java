@@ -33,6 +33,7 @@ public class medicine_price extends Fragment {
         wv.setWebViewClient(new mybrowser());
         wv.getSettings().setLoadsImagesAutomatically(true);
         wv.getSettings().setJavaScriptEnabled(true);
+        wv.getSettings().setBuiltInZoomControls(true);
         wv.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         wv.loadUrl(url);
 
