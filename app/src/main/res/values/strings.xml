@@ -56,4 +56,6 @@
     <string name="symptom_checker">Symptom Checker</string>
     <string name="user">User</string>
     <string name="prevention">Prevention</string>
+    <string name="hello_user">Hello user !!</string>
+    <string name="about">About</string>
 </resources>
