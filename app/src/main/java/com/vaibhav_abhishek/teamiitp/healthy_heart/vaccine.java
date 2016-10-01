@@ -7,20 +7,27 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 public class vaccine extends Fragment {
+    TextView zika,swineflu,medicine_and_math,cough;
+    final webview wv=new webview();
 
 
-    public vaccine() {
-        // Required empty public constructor
-    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.vaccine, container, false);
+        View v= inflater.inflate(R.layout.fragment_vaccine, container, false);
+
+        return v;
     }
+
+
+
+
 
 }

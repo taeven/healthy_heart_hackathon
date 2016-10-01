@@ -12,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/basic_first_aid"
-        android:id="@+id/textView6"
+        android:text="Some Articles"
+        android:id="@+id/textView7"
         android:layout_marginTop="30dp"
         android:textIsSelectable="false"
         android:layout_gravity="center_horizontal" />
@@ -22,24 +22,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/animal_bite"
-        android:text="@string/animal_bites_treatment"
+        android:id="@+id/zika"
+        android:text="NIH begins testing investigational Zika vaccine in humans"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="45dp"
-        android:onClick="animal"
         android:textIsSelectable="true"
         android:clickable="true"
-        android:textColor="#555555" />
+        android:textColor="#555555"
+        android:onClick="zika" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/cuts_and_wounds"
-        android:id="@+id/cuts_wounds"
+        android:text="New Findings from Iwate Medical University in the Area of Human Influenza Described (Analysis of the beta-propiolactone sensitivity and optimization of inactivation methods for human influenza H3N2 virus)"
+        android:id="@+id/swineflu"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp"
-        android:onClick="cuts"
+        android:onClick="swineflu"
+        android:textIsSelectable="false"
+        android:clickable="true"
+        android:textColor="#555555" />
+   
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Medicine and Math"
+        android:id="@+id/medicine_and_math"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:onClick="medicine_and_math"
         android:textIsSelectable="false"
         android:clickable="true"
         android:textColor="#555555" />
@@ -47,51 +60,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/diarrhea_treatment"
-        android:id="@+id/diarrhea"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Reports Outline Whooping Cough Study Findings from Department of Pediatrics (Protection Against Pertussis)"
+        android:id="@+id/cough"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp"
-        android:onClick="diarrea"
-        android:textIsSelectable="false"
-        android:clickable="true"
-        android:textColor="#555555" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/insect_sting"
-        android:id="@+id/insect_sting"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:onClick="insect"
-        android:textIsSelectable="false"
-        android:clickable="true"
-        android:textColor="#555555" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/thermal_burn"
-        android:id="@+id/thermal_burn"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:onClick="burn"
-        android:textIsSelectable="false"
-        android:clickable="true"
-        android:textColor="#555555" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/treating_fever_in_chindren"
-        android:id="@+id/child_fever"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="15dp"
-        android:onClick="fever"
+        android:onClick="cough"
         android:textIsSelectable="false"
         android:clickable="true"
         android:textColor="#555555" />
