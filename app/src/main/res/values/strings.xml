@@ -54,4 +54,6 @@
     <string name="daily">Daily</string>
     <string name="medicine_information">medicine information</string>
     <string name="symptom_checker">Symptom Checker</string>
+    <string name="user">User</string>
+    <string name="prevention">Prevention</string>
 </resources>
