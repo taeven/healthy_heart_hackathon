@@ -1,5 +1,6 @@
 package com.vaibhav_abhishek.teamiitp.healthy_heart;
 
+import android.app.AlarmManager;
 import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.NotificationManager;
@@ -21,9 +22,12 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.Arrays;
+import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener {
@@ -37,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements
     private final bmi_calculator bmi_cal = new bmi_calculator();
     private final SecondFragment mSecondFragment = new SecondFragment();
     private webview web_rt;
+    private EditText hrs;
     private  String type="animal";
     private final symptom_checker sc=new symptom_checker();
     private medicine_price mp=new medicine_price();
@@ -73,6 +78,8 @@ public class MainActivity extends AppCompatActivity implements
         } else {
             mNavItemId = savedInstanceState.getInt(NAV_ITEM_ID);
         }
+
+        hrs=(EditText)findViewById(R.id.hours_of_reppeated);
 
         // listen for navigation events
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation);
@@ -192,7 +199,7 @@ public class MainActivity extends AppCompatActivity implements
         web_rt.setArguments(bundle);
 
         getFragmentManager()
-                .beginTransaction()
+                .beginTransaction().addToBackStack("fever")
                 .replace(R.id.content,web_rt)
                 .commit();
     }
@@ -205,7 +212,7 @@ public class MainActivity extends AppCompatActivity implements
         web_rt.setArguments(bundle);
 
         getFragmentManager()
-                .beginTransaction()
+                .beginTransaction().addToBackStack("diarrea")
                 .replace(R.id.content,web_rt)
                 .commit();
     }
@@ -218,7 +225,7 @@ public class MainActivity extends AppCompatActivity implements
         web_rt.setArguments(bundle);
 
         getFragmentManager()
-                .beginTransaction()
+                .beginTransaction().addToBackStack("insect")
                 .replace(R.id.content,web_rt)
                 .commit();
     }
@@ -252,7 +259,7 @@ public class MainActivity extends AppCompatActivity implements
         web_rt.setArguments(bundle);
 
         getFragmentManager()
-                .beginTransaction()
+                .beginTransaction().addToBackStack("this")
                 .replace(R.id.content,web_rt)
                 .commit();
     }
