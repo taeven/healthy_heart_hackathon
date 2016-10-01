@@ -36,10 +36,9 @@ public class MainActivity extends AppCompatActivity implements
 
     private static final long DRAWER_CLOSE_DELAY_MS = 350;
     private static final String NAV_ITEM_ID = "navItemId";
-    private final vaccine vc=new vaccine();
+    private final articles artcls=new articles();
     private final brand_to_generic bg=new brand_to_generic();
     private final bmi_calculator bmi_cal = new bmi_calculator();
-    private final SecondFragment mSecondFragment = new SecondFragment();
     private webview web_rt;
     private EditText hrs;
     private  String type="animal";
@@ -133,10 +132,10 @@ public class MainActivity extends AppCompatActivity implements
                         .replace(R.id.content,sch)
                         .commit();
                 break;
-            case R.id.vaccine:
+            case R.id.article:
                 getFragmentManager()
                         .beginTransaction().addToBackStack("vaccine")
-                        .replace(R.id.content,vc)
+                        .replace(R.id.content,artcls)
                         .commit();
                 break;
 
