@@ -291,7 +291,7 @@ public class MainActivity extends AppCompatActivity implements
         if(item.getItemId()==R.id.action_settings)
         {
             getFragmentManager().beginTransaction().replace(R.id.content,abt).commit();
-            Toast.makeText(this,"selected",Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this,"selected",Toast.LENGTH_SHORT).show();
 
         }
 
