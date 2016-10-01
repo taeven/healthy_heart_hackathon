@@ -21,6 +21,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import java.util.Arrays;
 
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements
     private  String type="animal";
     private final symptom_checker sc=new symptom_checker();
     private medicine_price mp=new medicine_price();
+    private about abt=new about();
     private final first_aid FA=new first_aid();
     private final home hm=new home();
     private final schedule sch=new schedule();
@@ -286,6 +288,13 @@ public class MainActivity extends AppCompatActivity implements
         if (item.getItemId() == android.support.v7.appcompat.R.id.home) {
             return mDrawerToggle.onOptionsItemSelected(item);
         }
+        if(item.getItemId()==R.id.action_settings)
+        {
+            getFragmentManager().beginTransaction().replace(R.id.content,abt).commit();
+            Toast.makeText(this,"selected",Toast.LENGTH_SHORT).show();
+
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

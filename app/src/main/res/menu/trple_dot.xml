@@ -10,6 +10,7 @@
 
 <!-- Settings, should always be in the overflow -->
 <item android:id="@+id/action_settings"
+    android:background="@color/ternary"
     android:title="About"
     app:showAsAction="never"
     />
