@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements
     private final SecondFragment mSecondFragment = new SecondFragment();
     private webview web_rt;
     private  String type="animal";
+    private medicine_price mp=new medicine_price();
     private final first_aid FA=new first_aid();
     private final home hm=new home();
     private final schedule sch=new schedule();
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements
             case R.id.medicine_price:
                 getFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.content,vc)
+                        .replace(R.id.content,mp)
                         .commit();
                 break;
 

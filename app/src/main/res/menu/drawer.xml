@@ -49,6 +49,10 @@
                 android:id="@+id/medicine_price"
                 android:icon="@drawable/price"
                 android:title="@string/medicine_price" />
+            <item
+                android:id="@+id/medicine_info"
+                android:icon="@drawable/price"
+                android:title="@string/medicine_information" />
 
             <item
                 android:id="@+id/brand_generic"
