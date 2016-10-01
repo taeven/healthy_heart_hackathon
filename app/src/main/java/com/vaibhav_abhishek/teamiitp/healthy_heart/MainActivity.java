@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements
     private EditText hrs;
     private  String type="animal";
     private final common_disease cd=new common_disease();
+    private final vaccine vc=new vaccine();
+    private final diet_chart_frag dc=new diet_chart_frag();
     private final symptom_checker sc=new symptom_checker();
     private medicine_price mp=new medicine_price();
     private about abt=new about();
@@ -117,6 +119,11 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case R.id.diet_chart:
 
+                getFragmentManager()
+                        .beginTransaction().addToBackStack("diet")
+                        .replace(R.id.content, dc)
+                        .commit();
+
                 notify_me();
                 break;
 
@@ -163,6 +170,13 @@ public class MainActivity extends AppCompatActivity implements
                 getFragmentManager()
                         .beginTransaction().addToBackStack("symptom")
                         .replace(R.id.content,cd)
+                        .commit();
+                break;
+
+            case R.id.vaccine:
+                getFragmentManager()
+                        .beginTransaction().addToBackStack("vaccine")
+                        .replace(R.id.content,vc)
                         .commit();
                 break;
 

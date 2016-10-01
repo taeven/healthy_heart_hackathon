@@ -9,25 +9,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 
-
-public class home extends Fragment {
-
-    public home() {
-        // Required empty public constructor
-    }
-
+public class diet_chart_frag extends Fragment {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_home, container, false);
+        View view= inflater.inflate(R.layout.fragment_diet_chart_frag, container, false);
+        WebView wv=(WebView)view.findViewById(R.id.web_diet);
+        wv.loadUrl("file:///android_asset/diet.html");
+        wv.getSettings().setBuiltInZoomControls(true);
 
-        WebView wv=(WebView) view.findViewById(R.id.webView_for_home);
-        wv.loadUrl("file:///android_asset/home.html");
 
-        return view;
+        return  view;
     }
 
 }

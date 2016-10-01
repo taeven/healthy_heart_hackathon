@@ -2,12 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.vaibhav_abhishek.teamiitp.healthy_heart.home">
+    tools:context="com.vaibhav_abhishek.teamiitp.healthy_heart.diet_chart_frag">
 
+    <!-- TODO: Update blank fragment layout -->
 
     <WebView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:id="@+id/webView_for_home"
-        android:layout_gravity="right|bottom" />
+        android:id="@+id/web_diet"
+        android:layout_gravity="left|center_vertical" />
 </FrameLayout>

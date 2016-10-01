@@ -7,12 +7,14 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 
 public class vaccine extends Fragment {
-    TextView zika,swineflu,medicine_and_math,cough;
 
+
+    private WebView wv;
 
 
 
@@ -22,6 +24,10 @@ public class vaccine extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_vaccine, container, false);
+
+        wv=(WebView)v.findViewById(R.id.web_vaccine);
+        wv.loadUrl("file:///android_asset/vaccine.html");
+        wv.getSettings().setBuiltInZoomControls(true);
 
 
         return v;
