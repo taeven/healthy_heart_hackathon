@@ -421,6 +421,68 @@ public class MainActivity extends AppCompatActivity implements
 
     }
 
+    private web_for_articles wa;
+
+    public void zika(View view)
+    {
+
+        String url;
+        Bundle bundle=new Bundle();
+        bundle.putString("url","file:///android_asset/Zika.html");
+        wa=new web_for_articles();
+        wa.setArguments(bundle);
+
+        getFragmentManager()
+                .beginTransaction().addToBackStack("zika")
+                .replace(R.id.content,wa)
+                .commit();
+    }
+
+    public void swineflu(View view)
+    {
+
+        String url;
+        Bundle bundle=new Bundle();
+        bundle.putString("url","file:///android_asset/swineflu.html");
+        wa=new web_for_articles();
+        wa.setArguments(bundle);
+
+        getFragmentManager()
+                .beginTransaction().addToBackStack("swine")
+                .replace(R.id.content,wa)
+                .commit();
+    }
+
+    public void medicine_and_math(View view)
+    {
+
+        String url;
+        Bundle bundle=new Bundle();
+        bundle.putString("url","file:///android_asset/mathanddoctor.html");
+        wa=new web_for_articles();
+        wa.setArguments(bundle);
+
+        getFragmentManager()
+                .beginTransaction().addToBackStack("maht")
+                .replace(R.id.content,wa)
+                .commit();
+    }
+
+    public void cough(View view)
+    {
+
+        String url;
+        Bundle bundle=new Bundle();
+        bundle.putString("url","file:///android_asset/cough.html");
+        wa=new web_for_articles();
+        wa.setArguments(bundle);
+
+        getFragmentManager()
+                .beginTransaction().addToBackStack("cough")
+                .replace(R.id.content,wa)
+                .commit();
+    }
+
 
 
 
