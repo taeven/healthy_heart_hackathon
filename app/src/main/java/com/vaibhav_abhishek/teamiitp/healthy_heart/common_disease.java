@@ -1,5 +1,6 @@
 package com.vaibhav_abhishek.teamiitp.healthy_heart;
 
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.ProgressBar;
 
 
 public class common_disease extends Fragment {
@@ -26,8 +28,16 @@ public class common_disease extends Fragment {
         // Inflate the layout for this fragment
         View view =inflater.inflate(R.layout.fragment_common_disease, container, false);
 
+
+        ProgressBar progressBar=(ProgressBar)view.findViewById(R.id.common_prog);
+        progressBar.setVisibility(View.VISIBLE);
+
         WebView wv = (WebView) view.findViewById(R.id.common_disease_web);
-        wv.setWebViewClient(new mybrowser());
+//        ProgressDialog pd=new ProgressDialog(getActivity());
+//        pd.setTitle("loading...");
+//        pd.show();
+
+        wv.setWebViewClient(new mybrowser(progressBar));
         wv.getSettings().setLoadsImagesAutomatically(true);
         wv.getSettings().setJavaScriptEnabled(true);
         wv.getSettings().setBuiltInZoomControls(true);

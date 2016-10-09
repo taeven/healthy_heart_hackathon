@@ -11,4 +11,12 @@
         android:layout_height="fill_parent"
         android:id="@+id/brand_to_generic"
         android:layout_gravity="left|center_vertical" />
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="false"
+        android:id="@+id/brand_prog" />
 </FrameLayout>
