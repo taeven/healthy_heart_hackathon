@@ -45,11 +45,6 @@ public class hourly extends DialogFragment {
     }
 
 
-    public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
-
 
     public void set_alarm_hourly(View view)
     {
@@ -59,7 +54,19 @@ public class hourly extends DialogFragment {
             @Override
             public void onClick(View view) {
 
+                hrs=hours.getText().toString();
+                ttl=title.getText().toString();
+
                 Log.d("hourly","yo");
+                DbHandler dbHandler=new DbHandler(getActivity());
+                alarm_content alarmContent=new alarm_content(ttl,hrs,"hourly");
+                dbHandler.addAlarm(alarmContent);
+
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content,new schedule()).commit();
+                getDialog().dismiss();
+
 //
 //                int RQS_1 = 1;
 //                Calendar now=Calendar.getInstance();
