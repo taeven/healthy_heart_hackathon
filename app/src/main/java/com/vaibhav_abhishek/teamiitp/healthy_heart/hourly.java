@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,24 +53,28 @@ public class hourly extends DialogFragment {
 
     public void set_alarm_hourly(View view)
     {
+
+
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                int RQS_1 = 1;
-                Calendar now=Calendar.getInstance();
-
-
-                Calendar inter=Calendar.getInstance();
-                int hr=Integer.parseInt(hours.getText().toString());
-                inter.set(0,0,0,hr,0,0);
-
-                Intent intent = new Intent(getActivity().getBaseContext(), AlarmReceiver.class);
-                PendingIntent pendingIntent = PendingIntent.getBroadcast(getActivity().getBaseContext(), RQS_1, intent, 0);
-                AlarmManager alarmManager = (AlarmManager)getActivity().getSystemService(Context.ALARM_SERVICE);
-//        alarmManager.set(AlarmManager.RTC_WAKEUP, targetCal.getTimeInMillis(), pendingIntent);
-                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,now.getTimeInMillis(),inter.getTimeInMillis(),pendingIntent);
-
+                Log.d("hourly","yo");
+//
+//                int RQS_1 = 1;
+//                Calendar now=Calendar.getInstance();
+//
+//
+//                Calendar inter=Calendar.getInstance();
+//                int hr=Integer.parseInt(hours.getText().toString());
+//                inter.set(0,0,0,hr,0,0);
+//
+//                Intent intent = new Intent(getActivity().getBaseContext(), AlarmReceiver.class);
+//                PendingIntent pendingIntent = PendingIntent.getBroadcast(getActivity().getBaseContext(), RQS_1, intent, 0);
+//                AlarmManager alarmManager = (AlarmManager)getActivity().getSystemService(Context.ALARM_SERVICE);
+////        alarmManager.set(AlarmManager.RTC_WAKEUP, targetCal.getTimeInMillis(), pendingIntent);
+//                alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,now.getTimeInMillis(),inter.getTimeInMillis(),pendingIntent);
+//
             }
         });
 
