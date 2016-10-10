@@ -26,6 +26,7 @@ public class certain extends DialogFragment {
     private CheckBox cb[];
     private Button done;
     private EditText hrs_certain[];
+    private String titles[]={"morning","afternoon","evening","night"};
     public certain() {
         // Required empty public constructor
     }
@@ -51,6 +52,7 @@ public class certain extends DialogFragment {
         for (int i = 0; i < 4; i++) {
             hrs_certain[i] = (EditText) view.findViewById(texts[i]);
 
+
         }
 
 
@@ -69,11 +71,19 @@ public class certain extends DialogFragment {
             public void onClick(View view) {
 
                 Log.d("certain","yo");
+                DbHandler dbHandler=new DbHandler(getActivity());
+
+
 //                int RQS_1 = 1;
 //
-//                for (int i = 0; i < 4; i++) {
+                for (int i = 0; i < 4; i++) {
 //
-//                    if (cb[i].isChecked()) {
+                    if (cb[i].isChecked()) {
+
+
+                        alarm_content alarmContent=new alarm_content(titles[i],hrs_certain[i].getText().toString(),"certain");
+                        dbHandler.addAlarm(alarmContent);
+
 //                        Calendar now = Calendar.getInstance();
 //
 //                        int min;
@@ -100,9 +110,14 @@ public class certain extends DialogFragment {
 //                        AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
 ////        alarmManager.set(AlarmManager.RTC_WAKEUP, targetCal.getTimeInMillis(), pendingIntent);
 //                        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, now.getTimeInMillis(), inter.getTimeInMillis(), pendingIntent);
-//                    }
+                    }
                 }
-//            }
+                getFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.content,new schedule())
+                        .commit();
+                getDialog().dismiss();
+            }
 
         });
 
