@@ -71,8 +71,19 @@ public class DbHandler extends SQLiteOpenHelper {
             } while (cursor.moveToNext());
 
         }
+        cursor.close();
         Log.d("return: ", "ready to return");
 
         return alarm_data;
+    }
+
+    public void delete_alarm(String to_be_deleted)
+    {
+        Log.d("Deleting: ","preparing to delete "+to_be_deleted);
+        SQLiteDatabase sqLiteDatabase=this.getWritableDatabase();
+        sqLiteDatabase.delete(TABLE_NAME,TITLE+" = ? ",new String[]{to_be_deleted});
+        Log.d("Deleting: ","deleted");
+
+
     }
 }

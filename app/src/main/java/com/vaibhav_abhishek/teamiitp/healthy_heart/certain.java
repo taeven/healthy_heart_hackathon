@@ -22,6 +22,7 @@ import java.util.Calendar;
 
 public class certain extends DialogFragment {
     private final int texts[] = {R.id.morning_time, R.id.afternoon_tie, R.id.evening_time, R.id.night_time};
+    EditText title;
     private final int checkboxs[] = {R.id.morning, R.id.afternoon, R.id.evening, R.id.night};
     private CheckBox cb[];
     private Button done;
@@ -38,7 +39,7 @@ public class certain extends DialogFragment {
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.fragment_certain, container, false);
-
+        title=(EditText)view.findViewById(R.id.title_certain);
         cb = new CheckBox[4];
         hrs_certain=new EditText[4];
 
@@ -81,7 +82,7 @@ public class certain extends DialogFragment {
                     if (cb[i].isChecked()) {
 
 
-                        alarm_content alarmContent=new alarm_content(titles[i],hrs_certain[i].getText().toString(),"certain");
+                        alarm_content alarmContent=new alarm_content(title.getText().toString(),hrs_certain[i].getText().toString(),titles[i]);
                         dbHandler.addAlarm(alarmContent);
 
 //                        Calendar now = Calendar.getInstance();
